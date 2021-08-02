@@ -12,11 +12,11 @@ class Human {
     this.lastName = lastName;
     this._age = age;
   }
-
+//чтобы посмотреть возраст
   get age() {
     return this._age;
   }
-
+//чтобы менять возраст, задавать
   set age(newAge) {
     if (isNaN(newAge) || typeof newAge !== "number") {
       throw new TypeError("Age must be number");
